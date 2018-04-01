@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40px;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #5c50ca;
+  padding: 10px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@media print {
+  .App-header {
+    display: none;
+  }
+}

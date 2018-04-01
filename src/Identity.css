@@ -1,0 +1,16 @@
+.Identity {
+  display: flex;
+  width: 684.8px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.5em auto;
+  background-color: white;
+  box-shadow: rgba(1,1,1,0.1);
+}
+
+.address {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 8pt;
+  color: #5c50ca;
+}

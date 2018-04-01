@@ -1,0 +1,52 @@
+.Card {
+  border: 1px dotted black;
+  padding: 0;
+  width: 342.4px;
+  height: 215.92px;
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Card:first-child {
+  border-right: none;
+}
+
+.Card .CardBody {
+  padding: 0.5em;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;  
+}
+
+.did {
+  flex: 0;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 6pt;
+  color: white;
+  padding: 0.5em;
+  background-color: #5c50ca;
+}
+.Bio {
+  text-align: left;
+  font-size: 8pt;
+}
+.Bio strong {
+  color: #5c50ca;
+}
+.Blurb {
+  text-align: left;
+  font-size: 7pt;
+  padding-left: 0.5em;
+}
+.Blurb h3 {
+  color: red;
+}
+@media print {
+  .Card {
+    width: 85.60mm;
+    height: 53.98mm;
+  }
+}
