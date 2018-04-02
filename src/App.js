@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import Identity from './Identity'
 import './App.css';
-import { createIdentity } from './KeyChain'
+import { createIdentity, fakeClaims } from './KeyChain'
 
 
 class App extends Component {
@@ -13,7 +13,7 @@ class App extends Component {
   }
   
   async createIdentity () {
-    const identity = await createIdentity()
+    const identity = await createIdentity(fakeClaims())
     this.setState({identities: [identity].concat(this.state.identities)})
   }
 
