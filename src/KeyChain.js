@@ -1,5 +1,5 @@
 import { ec as EC } from 'elliptic'
-import { toEthereumAddress } from 'did-jwt/src/Digest'
+import { toEthereumAddress } from 'did-jwt/lib/Digest'
 import { createJWT, SimpleSigner } from 'did-jwt'
 import faker from 'faker'
 import HDKey from 'hdkey'
