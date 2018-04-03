@@ -1,17 +1,31 @@
 .Card {
   border-left: 1px solid rgba(0,0,0,0.1);
   padding: 0;
-  width: 85.60mm;
-  height: 53.98mm;
+  height: 215.92px;
+  flex: 0 0 342.4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 5px, 5px, 5px, 5px, rgba(0,0,0,0.5);
+}
 
-  flex: 0;
+.Secret {
+  border-left: 1px solid rgba(0,0,0,0.1);
+  padding: 0;
+  height: 215.92px;
+  flex: 0 0 107.96px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   background-color: white;
   box-shadow: 5px, 5px, 5px, 5px, rgba(0,0,0,0.5);
+  overflow: hidden;
 }
-
+.Secret canvas {
+  margin: 0.25em;
+}
 .Card:first-child {
   border-left: none;
 }
@@ -46,6 +60,10 @@
 }
 .Blurb h3 {
   color: red;
+  margin: 0;
+}
+.Address .Blurb {
+  font-size: 12;
 }
 
 .Seed {
@@ -56,7 +74,11 @@
 }
 @media print {
   .Card {
-    width: 85.60mm;
     height: 53.98mm;
+    flex: 0 0 85.60mm;
+  }
+  .Secret {
+    height: 53.98mm;
+    flex: 0 0 25mm;  
   }
 }
